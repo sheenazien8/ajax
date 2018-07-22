@@ -5,13 +5,13 @@
 	<title>Jquery</title>
 </head>
 <body>
+	<p>Terhapus</p>
 	<button>Save</button>
-	
 <script type="text/javascript" src="assets/js/jquery-3.3.1.min.js" ></script>
 <script>
 	$("document").ready(function() {
 		$('button').click(function() {
-			$(this).replaceWith('<div>'+$(this).text()+'</div>');
+			$('p').remove();
 		});
 	})
 </script>
