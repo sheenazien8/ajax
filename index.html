@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Jquery</title>
+</head>
+<body>
+
+	<p>Ini adalah halaman 1</p>
+	<div>
+		<p>Ini adalah halaman ke 2</p>
+	</div>
+	<p class="merah">Ini merah</p>
+<script type="text/javascript" src="assets/js/jquery-3.3.1.min.js" ></script>
+<script>
+	$("document").ready(function() {
+		// memanggil semua div yang didalamnya ada tag p
+		$("div > p").css("border","1px solid blue")
+		$(".merah").css("color","red")
+	})
+</script>
+</body>
+</html>
