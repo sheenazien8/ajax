@@ -5,19 +5,14 @@
 	<title>Jquery</title>
 </head>
 <body>
-
-	<!-- <p>Ini adalah halaman 1</p>
-	<div>
-		<p>Ini adalah halaman ke 2</p>
-	</div> -->
-	<p class="merah">Ini merah</p>
+	<button>Save</button>
+	
 <script type="text/javascript" src="assets/js/jquery-3.3.1.min.js" ></script>
 <script>
 	$("document").ready(function() {
-		$("p").before("<strong>Hello</strong>");
-		$("p").after("<strong>Hello</strong>");
-		// $("span").insertAfter("#conto");
-		// $("span").beforeAfter("#conto");
+		$('button').click(function() {
+			$(this).replaceWith('<div>'+$(this).text()+'</div>');
+		});
 	})
 </script>
 </body>
